@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Large generated data/model artifacts - regenerate via `python run_pipeline.py`
+data/lake_sim/raw/*.txt
+data/lake_sim/processed/*.parquet
+data/lake_sim/features/*.parquet
+data/lake_sim/eval/*.parquet
+models/*.joblib
+models/*.pt
+models/*.npz
+outputs/scored_test_set.parquet
+outputs/dashboard/*.html
+
+.DS_Store
