@@ -74,12 +74,7 @@ readings; precision/recall are modest given how rare (0.57%) and short the
 injected events are relative to fleet noise. This is the version worth
 defending in an interview.
 
-## Dashboards
 
-- `outputs/dashboard/voltwatch_dashboard.html` — open directly in a
-  browser, no server needed.
-- `outputs/dashboard_data/*.csv` — drop straight into Power BI
-  (*Get Data → Text/CSV*) or Tableau (*Text File*), zero transformation.
 
 ## Project structure
 

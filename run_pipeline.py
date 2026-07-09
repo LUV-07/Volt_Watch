@@ -7,7 +7,7 @@ Runs the entire pipeline end to end:
   3. Feature engineering (rolling stats + Fourier/spectral features)
   4. Evaluation (Isolation Forest CV + LSTM autoencoder holdout + hybrid fusion)
   5. Dashboard data export (Power BI / Tableau-ready CSVs)
-  6. Interactive HTML dashboard build
+
 
 Usage:
     python run_pipeline.py
@@ -22,7 +22,7 @@ STEPS = [
     ("Feature engineering", "src/etl/features.py"),
     ("Model training + evaluation (CV + holdout)", "src/evaluation/evaluate.py"),
     ("Export Power BI / Tableau data marts", "src/dashboards/export_data.py"),
-    ("Build interactive HTML dashboard", "src/dashboards/build_dashboard.py"),
+    
 ]
 
 
@@ -37,7 +37,6 @@ def main():
         print(f"[{time.time()-t0:.1f}s]")
 
     print("\nPipeline complete.")
-    print("  Dashboard: outputs/dashboard/voltwatch_dashboard.html")
     print("  BI extracts: outputs/dashboard_data/")
     print("  Eval results: outputs/eval_results.json")
 
